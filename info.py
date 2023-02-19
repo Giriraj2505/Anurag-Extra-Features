@@ -37,9 +37,9 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID'))
-API_HASH = environ.get('API_HASH')
-BOT_TOKEN = environ.get('BOT_TOKEN')
+API_ID = int(environ.get('13687927'))
+API_HASH = environ.get('469e3f62b54f83f9839216aefab5136f')
+BOT_TOKEN = environ.get('5188353692:AAHum11y3gJIBcXTuviMHLlx7HMrhl6gWpY')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -47,9 +47,9 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS' ,'https://telegra.ph/file/8619a6f258621134b7576.jpg https://telegra.ph/file/d8daf35960bbb4a7f8558.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS',).split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('1892306299',).split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1892306299').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -70,8 +70,8 @@ TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Anurag")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://giri9057:giri9057@cluster0.zflhm.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Filterautobot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Anurag_files')
 
 #Downloader
